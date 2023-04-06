@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>NFT preview card component</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0c1523;
+      }
+
+      .con {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border-radius: 15px;
+        background-color: #172a46;
+        padding: 20px;
+        box-shadow: 5px 5px 20px #172a46;
+      }
+
+      .nft-img img {
+        max-width: 300px;
+        border-radius: 15px;
+      }
+
+      .nft-img img:hover {
+        filter: brightness(300%);
+        cursor: pointer;
+      }
+
+      .nft {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .nft a {
+        color: #00fff8;
+        font-weight: 600;
+        font-size: 19px;
+        text-decoration: none;
+      }
+
+      .nft-par {
+        color: #8e9aab;
+        line-height: 1.7;
+        font-size: 14px;
+      }
+
+      .nft-price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .nft-price span {
+        color: #00fff8;
+        font-weight: 600;
+        font-size: 17px;
+        margin-left: 5px;
+      }
+
+      .left {
+        margin-left: auto;
+      }
+
+      .left span {
+        font-weight: 600;
+        font-size: 14px;
+        color: #8e9aab;
+      }
+
+      .creation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-top: 1px solid #4a5d79;
+        padding-top: 15px;
+      }
+      .creation img {
+        width: 30px;
+      }
+      .creation p {
+        margin-left: 5px;
+        font-weight: 500;
+        color: #8e9aab;
+      }
+
+      .creation a {
+        margin-left: 3px;
+        color: #00fff8;
+        text-decoration: none;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <div class="nft-img">
+        <img src="./images/image-equilibrium.jpg" alt="picture of neft" />
+      </div>
+      <div class="nft">
+        <div>
+          <a href="#">Equilibrium #3429</a>
+        </div>
+        <p class="nft-par">
+          our Eqilibrium collection promotes balance and calm
+        </p>
+        <div class="nft-price">
+          <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+              fill="#00FFF8"
+            />
+          </svg>
+          <span>0.041 ETH</span>
+          <div class="left">
+            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+            <span>3 days left</span>
+          </div>
+        </div>
+        <div class="creation">
+          <img src="./images/image-avatar.png" alt="pic of user" />
+          <p>creation of <a href="#">Jules Wyvern</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
